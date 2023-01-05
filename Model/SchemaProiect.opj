@@ -1,0 +1,130 @@
+(ExpressProject "SchemaProiect"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\schemaproiect.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\schemaproiect-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schemaproiect-schematic1-simulareintimp.sim"
+        (DisplayName "SCHEMATIC1-SimulareInTimp")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schemaproiect-schematic1-frecventa.sim"
+        (DisplayName "SCHEMATIC1-Frecventa")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schemaproiect-schematic1-mata.sim"
+        (DisplayName "SCHEMATIC1-mata")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schemaproiect-schematic1-frecv.sim"
+        (DisplayName "SCHEMATIC1-frecv")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schemaproiect-schematic1-timp.sim"
+        (DisplayName "SCHEMATIC1-timp")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schemaproiect-schematic1-montecarlo.sim"
+        (DisplayName "SCHEMATIC1-montecarlo")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\schemaproiect-schematic1-frecv.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSFFM
+      (FullPartName "VSFFM.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (BDW47
+      (FullPartName "BDW47.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (BDW42
+      (FullPartName "BDW42.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (TIP117
+      (FullPartName "TIP117.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (TIP112
+      (FullPartName "TIP112.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (Q2N3646
+      (FullPartName "Q2N3646.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (Q2N3645
+      (FullPartName "Q2N3645.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (MJH11022
+      (FullPartName "MJH11022.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (TIP147
+      (FullPartName "TIP147.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (TIP142
+      (FullPartName "TIP142.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\schemaproiect.dsn")
+      (Path "Design Resources" ".\schemaproiect.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources" ".\schemaproiect.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 455"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 1406 78 568")
+        (Scroll "0 0")
+        (Zoom "91")
+        (Occurrence "/"))
+      (Path "D:\PAC\SCHEMAPROIECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

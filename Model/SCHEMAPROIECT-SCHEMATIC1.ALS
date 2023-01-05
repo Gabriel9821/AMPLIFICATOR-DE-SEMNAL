@@ -1,0 +1,35 @@
+.ALIASES
+D_D1            D1(1=N124575 2=N36961 )
+R_R5            R5(1=0 2=N36388 )
+
+X_U1            U1(+=N00744 -=N00792 V+=+VALIMENTARE V-=-VALIMENTARE OUT=N01871 )
+D_D4            D4(1=N124671 2=N124805 )
+R_R1            R1(1=0 2=N00792 )
+
+D_D2            D2(1=N124854 2=N124575 )
+V_V3            V3(+=+VALIMENTARE -=0 )
+R_R6            R6(1=N36388 2=N36961 )
+
+R_R10           R10(1=N124854 2=+VALIMENTARE )
+
+R_R11           R11(1=N124805 2=-VALIMENTARE )
+
+X_U2            U2(+=N122312 -=N114172 V+=+VALIMENTARE V-=-VALIMENTARE OUT=N114172 )
+V_V1            V1(+=N00744 -=0 )
+D_D3            D3(1=N36961 2=N124671 )
+C_C1            C1(1=0 2=N122051 )
+R_R2            R2(1=N00792 2=N01871 )
+
+X_U3            U3(+=N122051 -=N116425 V+=+VALIMENTARE V-=-VALIMENTARE OUT=N116425 )
+C_C2            C2(1=N01871 2=N122312 )
+R_R3            R3(1=N114172 2=N122051 )
+R_R9            R9(1=N101905 2=0 )
+
+X_Q6            Q6(c=-VALIMENTARE b=N124805 e=N101905 )
+R_R4            R4(1=0 2=N122312 )
+X_U4            U4(+=N116425 -=N36388 V+=+VALIMENTARE V-=-VALIMENTARE OUT=N36961 )
+V_V2            V2(+=-VALIMENTARE -=0 )
+X_Q5            Q5(c=+VALIMENTARE b=N124854 e=N101905 )
+_    _(+Valimentare=+VALIMENTARE)
+_    _(-Valimentare=-VALIMENTARE)
+.ENDALIASES

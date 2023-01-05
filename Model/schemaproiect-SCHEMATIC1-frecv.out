@@ -1,0 +1,322 @@
+
+**** 07/09/19 08:34:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-frecv"  [ d:\pac\schemaproiect-schematic1-frecv.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "schemaproiect-schematic1-frecv.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 500kHz
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\schemaproiect-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING schemaproiect-SCHEMATIC1.net ****
+* source SCHEMAPROIECT
+D_D1         N124575 N36961 D1N4148 
+R_R5         0 N36388 R_R5 1k  
+.model        R_R5 RES R=1 DEV=5%
+X_U1         N00744 N00792 +VALIMENTARE -VALIMENTARE N01871 OPA3581J
+D_D4         N124671 N124805 D1N4148 
+R_R1         0 N00792 R_R1 10  
+.model        R_R1 RES R=1 DEV=5%
+D_D2         N124854 N124575 D1N4148 
+V_V3         +VALIMENTARE 0 70Vdc
+R_R6         N36388 N36961 R_R6 7.5k  
+.model        R_R6 RES R=1 DEV=5%
+R_R10         N124854 +VALIMENTARE R_R10 5.8k  
+.model        R_R10 RES R=1 DEV=5%
+R_R11         N124805 -VALIMENTARE R_R11 5.8k  
+.model        R_R11 RES R=1 DEV=5%
+X_U2         N122312 N114172 +VALIMENTARE -VALIMENTARE N114172 OPA3581J
+V_V1         N00744 0 DC 0Vdc AC 25Vac 
+D_D3         N36961 N124671 D1N4148 
+C_C1         0 N122051  47nF  
+R_R2         N00792 N01871 R_R2 2.4k  
+.model        R_R2 RES R=1 DEV=5%
+X_U3         N122051 N116425 +VALIMENTARE -VALIMENTARE N116425 OPA3581J
+C_C2         N01871 N122312  470nF  
+R_R3         N114172 N122051  330  
+R_R9         N101905 0 R_R9 12  
+.model        R_R9 RES R=1 DEV=5%
+X_Q6         -VALIMENTARE N124805 N101905 BDW47
+R_R4         0 N122312  860  
+X_U4         N116425 N36388 +VALIMENTARE -VALIMENTARE N36961 OPA3581J
+V_V2         -VALIMENTARE 0 -70Vdc
+X_Q5         +VALIMENTARE N124854 N101905 BDW42
+
+**** RESUMING schemaproiect-schematic1-frecv.sim.cir ****
+.END
+
+**** 07/09/19 08:34:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-frecv"  [ d:\pac\schemaproiect-schematic1-frecv.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U1.dx         X_U1.dy         X_U2.dx         
+          IS    2.682000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664                          1.000000E-03                 
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12                   10.000000E-12                 
+          VJ     .5                                                          
+           M     .3333                                                       
+
+
+               X_U2.dy         X_U3.dx         X_U3.dy         X_Q6.Dmodel     
+          IS  800.000000E-18  800.000000E-18  800.000000E-18    6.768700E-12 
+           N                                                    3.4748       
+         ISR                                                  100.000000E-12 
+          BV                                                  120            
+         IBV                                                    1.000000E-06 
+          RS    1.000000E-03                    1.000000E-03    1.000000E-03 
+          TT                                                    5.000000E-09 
+         CJO   10.000000E-12                   10.000000E-12    1.000000E-12 
+          VJ                                                     .75         
+           M                                                     .3333       
+
+
+               X_U4.dx         X_U4.dy         X_Q5.Dmodel     
+          IS  800.000000E-18  800.000000E-18    6.768700E-12 
+           N                                    3.4748       
+         ISR                                  100.000000E-12 
+          BV                                  120            
+         IBV                                    1.000000E-06 
+          RS                    1.000000E-03    1.000000E-03 
+          TT                                    5.000000E-09 
+         CJO                   10.000000E-12    1.000000E-12 
+          VJ                                     .75         
+           M                                     .3333       
+
+
+**** 07/09/19 08:34:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-frecv"  [ d:\pac\schemaproiect-schematic1-frecv.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q6.Q1model    X_Q6.Q2model    X_Q5.Q1model    X_Q5.Q2model    
+               PNP             PNP             NPN             NPN             
+          IS   39.060000E-15   39.060000E-15  150.700000E-15  150.700000E-15 
+          BF    2.997000E+03    2.997000E+03    2.997000E+03    2.997000E+03 
+          NF    1               1               1               1            
+         VAF  100             100             100             100            
+         IKF     .04758          .04758          .8407           .8407       
+         ISE    3.255000E-12    3.255000E-12    1.148000E-12    1.148000E-12 
+          NE    1.522           1.522           1.337           1.337        
+          BR  499.5           499.5              .1884           .1884       
+          NR    1               1               1               1            
+         VAR  100             100             100             100            
+         IKR   19.98           19.98             .01001          .01001      
+         ISC   20.380000E-06   20.380000E-06  936.700000E-15  936.700000E-15 
+          NC    2.997           2.997           2.94            2.94         
+          NK     .5957           .5957           .6388           .6388       
+          RB   36.3932         36.3932          2.1193          2.1193       
+          RC    2.02607         2.02607          .194791         .194791     
+         CJE  149.900000E-12  149.900000E-12  105.500000E-12  105.500000E-12 
+         VJE    1.474           1.474            .7775           .7775       
+         MJE     .5197           .5197           .4512           .4512       
+         CJC  246.200000E-12                  160.100000E-12                 
+         VJC    1.5             1.5              .8966           .8966       
+         MJC     .2676           .2676           .3035           .3035       
+        XCJC     .9              .9              .9              .9          
+          TF   10.000000E-09   10.000000E-09   20.000000E-09   20.000000E-09 
+         XTF    1               1               1               1            
+         VTF   10              10              10              10            
+         ITF     .01             .01             .01             .01         
+          TR  500.000000E-06  500.000000E-06    8.000000E-06    8.000000E-06 
+          CN    2.2             2.2             2.42            2.42         
+           D     .52             .52             .87             .87         
+
+
+**** 07/09/19 08:34:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-frecv"  [ d:\pac\schemaproiect-schematic1-frecv.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.jx         X_U2.jx         X_U3.jx         X_U4.jx         
+               NJF             NJF             NJF             NJF             
+         VTO   -1              -1              -1              -1            
+        BETA  315.800000E-06  315.800000E-06  315.800000E-06  315.800000E-06 
+          IS   10.000000E-12   10.000000E-12   10.000000E-12   10.000000E-12 
+
+
+**** 07/09/19 08:34:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-frecv"  [ d:\pac\schemaproiect-schematic1-frecv.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               R_R5            R_R1            R_R6            R_R10           
+           R    1               1               1               1            
+
+
+               R_R11           R_R2            R_R9            
+           R    1               1               1            
+
+
+**** 07/09/19 08:34:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-frecv"  [ d:\pac\schemaproiect-schematic1-frecv.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00744)    0.0000 (N00792)-975.6E-09 (N01871)-235.3E-06 (N36388)-2.821E-06     
+
+(N36961)-24.66E-06 (X_Q5.4)     .8147 (X_Q6.4)    -.7687 (X_U1.6) 18.74E-09     
+
+(X_U1.7)-235.4E-06 (X_U1.8)-235.4E-06 (X_U1.9)    0.0000 (X_U2.6) 71.63E-12     
+
+(X_U2.7)-898.8E-09 (X_U2.8)-898.8E-09 (X_U2.9)    0.0000 (X_U3.6) 146.4E-12     
+
+(X_U3.7)-1.845E-06 (X_U3.8)-1.845E-06 (X_U3.9)    0.0000 (X_U4.6)-6.413E-09     
+
+(X_U4.7)-15.88E-06 (X_U4.8)-15.88E-06 (X_U4.9)    0.0000 (N101905)     .0103    
+
+(N114172)-898.7E-09                   (N116425)-1.845E-06                       
+
+(N122051)-869.0E-09                   (N122312) 77.43E-09                       
+
+(N124575)     .7311                   (N124671)    -.7313                       
+
+(N124805)   -1.4626                   (N124854)    1.4622                       
+
+(X_U1.10)     .4367                   (X_U1.11)   69.6010                       
+
+(X_U1.12)   69.6010                   (X_U1.53)   65.0000                       
+
+(X_U1.54)  -65.0000                   (X_U1.90)-98.28E-06                       
+
+(X_U1.91)   50.0000                   (X_U1.92)  -50.0000                       
+
+(X_U1.99)    0.0000                   (X_U2.10)     .4367                       
+
+(X_U2.11)   69.6010                   (X_U2.12)   69.6010                       
+
+(X_U2.53)   65.0000                   (X_U2.54)  -65.0000                       
+
+(X_U2.90)-631.8E-09                   (X_U2.91)   50.0000                       
+
+(X_U2.92)  -50.0000                   (X_U2.99)    0.0000                       
+
+(X_U3.10)     .4367                   (X_U3.11)   69.6010                       
+
+(X_U3.12)   69.6010                   (X_U3.53)   65.0000                       
+
+(X_U3.54)  -65.0000                   (X_U3.90) 1.444E-06                       
+
+(X_U3.91)   50.0000                   (X_U3.92)  -50.0000                       
+
+(X_U3.99)    0.0000                   (X_U4.10)     .4367                       
+
+(X_U4.11)   69.6010                   (X_U4.12)   69.6010                       
+
+(X_U4.53)   65.0000                   (X_U4.54)  -65.0000                       
+
+(X_U4.90)     .0351                   (X_U4.91)   50.0000                       
+
+(X_U4.92)  -50.0000                   (X_U4.99)    0.0000                       
+
+(+VALIMENTARE)   70.0000              (-VALIMENTARE)  -70.0000              
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.976E+00
+    V_V1         9.004E-11
+    V_V2         1.975E+00
+    X_U1.vb      1.874E-13
+    X_U1.vc      6.500E-11
+    X_U1.ve      6.548E-11
+    X_U1.vlim   -9.828E-08
+    X_U1.vlp    -5.000E-11
+    X_U1.vln    -5.000E-11
+    X_U2.vb      7.163E-16
+    X_U2.vc      6.500E-11
+    X_U2.ve      7.276E-11
+    X_U2.vlim   -6.318E-10
+    X_U2.vlp    -5.000E-11
+    X_U2.vln    -5.000E-11
+    X_U3.vb      1.464E-15
+    X_U3.vc      6.500E-11
+    X_U3.ve      7.276E-11
+    X_U3.vlim    1.444E-09
+    X_U3.vlp    -5.000E-11
+    X_U3.vln    -5.000E-11
+    X_U4.vb     -6.413E-14
+    X_U4.vc      6.500E-11
+    X_U4.ve      7.276E-11
+    X_U4.vlim    3.510E-05
+    X_U4.vlp    -4.997E-11
+    X_U4.vln    -5.004E-11
+
+    TOTAL POWER DISSIPATION   2.77E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .16
+

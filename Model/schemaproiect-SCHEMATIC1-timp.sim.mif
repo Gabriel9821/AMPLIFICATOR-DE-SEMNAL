@@ -1,0 +1,4 @@
+ lib="C:\Program Files\Orcad\Capture\Library\PSpice\diode.lib", offset=19469, size=330
+ lib="C:\Program Files\Orcad\Capture\Library\PSpice\opamp.lib", offset=86338, size=1118
+ lib="C:\Program Files\Orcad\Capture\Library\PSpice\darlngtn.lib", offset=5342, size=1177
+ lib="C:\Program Files\Orcad\Capture\Library\PSpice\darlngtn.lib", offset=4165, size=1178
